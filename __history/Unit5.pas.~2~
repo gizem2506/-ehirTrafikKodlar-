@@ -1,0 +1,128 @@
+unit Unit5;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TForm5 = class(TForm)
+    Label1: TLabel;
+    Edit1: TEdit;
+    Button1: TButton;
+    Label2: TLabel;
+    procedure Button1Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form5: TForm5;
+     sayi:integer;
+implementation
+
+{$R *.dfm}
+
+procedure TForm5.Button1Click(Sender: TObject);
+var
+ sayi:integer;
+begin
+
+      sayi := StrToInt(Edit1.Text);
+case sayi of
+1: Label2.Caption:=(' Adana ');
+2: Label2.Caption:=(' Adýyaman ');
+3: Label2.Caption:=(' Afyonkarahisar ');
+4: Label2.Caption:=(' Aðrý ');
+5: Label2.Caption:=(' Amasya ');
+6: Label2.Caption:=(' Ankara ');
+7: Label2.Caption:=(' Antalya ');
+8: Label2.Caption:=('Artvin');
+9: Label2.Caption:=('Aydýn');
+10:Label2.Caption:= ('Balýkesir');
+11:Label2.Caption:=('Bilecik');
+12:Label2.Caption:=('Bingöl');
+13:Label2.Caption:=('Bitlis');
+14:Label2.Caption:=('Bolu');
+15:Label2.Caption:=('Burdur');
+16:Label2.Caption:=('Bursa');
+17:Label2.Caption:=('Çanakkale');
+18:Label2.Caption:=('Çankýrý');
+19:Label2.Caption:=('Çorum');
+20:Label2.Caption:=('Denizli');
+21:Label2.Caption:=('Diyarbakýr');
+22:Label2.Caption:=('Edirne');
+23:Label2.Caption:=('Elazýð');
+24:Label2.Caption:=('Erzincan');
+25:Label2.Caption:=('Erzurum');
+26:Label2.Caption:=('Eskiþehir');
+27:Label2.Caption:=('Gaziantep');
+28:Label2.Caption:=('Giresun');
+29:Label2.Caption:=('Gümüþhane');
+30:Label2.Caption:=('Hakkari');
+31:Label2.Caption:=('Hatay');
+32:Label2.Caption:=('Isparta');
+33:Label2.Caption:=('Mersin');
+34:Label2.Caption:=('Ýstanbul');
+35:Label2.Caption:=('Ýzmir');
+36:Label2.Caption:=('Kars');
+37:Label2.Caption:=('Kastamonu');
+38:Label2.Caption:=('Kayseri');
+39:Label2.Caption:=('Kýrklareli');
+40:Label2.Caption:=('Kýrþehir');
+41:Label2.Caption:=('Kocaeli');
+42:Label2.Caption:=('Konya');
+43:Label2.Caption:=('Kütahya');
+44:Label2.Caption:=('Malatya');
+45:Label2.Caption:=('Manisa');
+46:Label2.Caption:=('Kahramanmaraþ');
+47:Label2.Caption:=('Mardin');
+48:Label2.Caption:=('Muðla');
+49:Label2.Caption:=('Muþ');
+50:Label2.Caption:=('Nevþehir');
+51:Label2.Caption:=('NÝÐDE');
+52:Label2.Caption:=('Ordu');
+53:Label2.Caption:=('Rize');
+54:Label2.Caption:=('Sakarya');
+55:Label2.Caption:=('Samsun');
+56:Label2.Caption:=('Siirt');
+57:Label2.Caption:=('Sinop');
+58:Label2.Caption:=('Sivas');
+59:Label2.Caption:=('Tekirdað');
+60:Label2.Caption:=('Tokat');
+61:Label2.Caption:=('Trabzon');
+62:Label2.Caption:=('Tunceli');
+63:Label2.Caption:=('Þanlýurfa');
+64:Label2.Caption:=('Uþak');
+65:Label2.Caption:=('Van');
+66:Label2.Caption:=('Yozgat');
+67:Label2.Caption:=('Zonguldak');
+68:Label2.Caption:=('Aksaray');
+69:Label2.Caption:=('Bayburt');
+70:Label2.Caption:=('Karaman');
+71:Label2.Caption:=('Kýrýkkale');
+72:Label2.Caption:=('Batman');
+73:Label2.Caption:=('Þýrnak');
+74:Label2.Caption:=('BARTIN');
+75:Label2.Caption:=('Ardahan');
+76:Label2.Caption:=('Iðdýr');
+77:Label2.Caption:=('Yalova');
+78:Label2.Caption:=('Karabük');
+79:Label2.Caption:=('Kilis');
+80:Label2.Caption:=('Osmaniye');
+81:Label2.Caption:=('Düzce');
+end;
+end;
+
+
+
+procedure TForm5.FormCreate(Sender: TObject);
+begin
+       Edit1.BorderStyle:=   bsSingle;
+end;
+
+end.
